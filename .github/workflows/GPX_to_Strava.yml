@@ -13,6 +13,11 @@ on:
 env:
   # please change to your own config.
   RUN_TYPE: gpxtostrava 
+  ATHLETE: Chongnuo Ji
+  TITLE: Run CJ Run
+  GITHUB_NAME: hyyz17200
+  GITHUB_EMAIL: hyyz172000@gmail.com
+
 
 jobs:
   sync:
