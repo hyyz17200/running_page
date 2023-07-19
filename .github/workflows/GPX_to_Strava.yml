@@ -2,8 +2,8 @@ name: GPX_to_Strava
 
 on:
   workflow_dispatch:
-  #schedule:
-  #  - cron: '0 0 * * *'
+  schedule:
+    - cron: '10 20 * * *'
   push:
     branches:
       - master
