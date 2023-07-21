@@ -2,11 +2,7 @@ name: Manual_Strava_Pull
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - master
-    paths:
-      - scripts/strava_sync.py
+
       
 env:
   # please change to your own config.
