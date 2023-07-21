@@ -54,4 +54,4 @@ jobs:
       - name: Run sync Strava script
         if: env.RUN_TYPE == 'tcxtostrava'
         run: |
-          python scripts/tcx_to_strava_sync.py ${client_id} ${client_secret} ${strava_refresh_token}
+          python scripts/tcx_to_strava_sync.py ${{ secrets.STRAVA_CLIENT_ID }} ${{ secrets.STRAVA_CLIENT_SECRET }} ${{ secrets.STRAVA_CLIENT_REFRESH_TOKEN }} 
