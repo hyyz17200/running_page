@@ -40,7 +40,7 @@ env:
   IGNORE_RANGE: 10 # Unit meter
   SAVE_DATA_IN_GITHUB_CACHE: true # if you deploy in the vercal, check the README
   DATA_CACHE_PREFIX: "track_data"
-  BUILD_GH_PAGES: false
+  BUILD_GH_PAGES: true
 
 jobs:
   sync:
