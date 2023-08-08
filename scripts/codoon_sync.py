@@ -61,6 +61,13 @@ TYPE_DICT = {
     2: "Ride",
 }
 
+# for tcx type
+TCX_TYPE_DICT = {
+    0: "Hike",
+    1: "Running",
+    2: "Ride",
+}
+
 # only for running sports, if you want others, please change the True to False
 IS_ONLY_RUN = True
 
@@ -143,7 +150,7 @@ def tcx_output(fit_array, run_data):
     activities = ET.Element("Activities")
     training_center_database.append(activities)
     # sport type
-    sports_type = TYPE_DICT.get(run_data["sports_type"])
+    sports_type = TCX_TYPE_DICT.get(run_data["sports_type"])
     # activity
     activity = ET.Element("Activity", {"Sport": sports_type})
     activities.append(activity)
